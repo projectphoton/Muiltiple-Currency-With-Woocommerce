@@ -4,25 +4,19 @@
  
 Plugin Name: Muiltiple Currnecy With Wocommerce
  
-Plugin URI: https://github.com/projectphoton/
+Plugin URI: https://github.com/projectphoton/Muiltiple-Currency-With-Woocommerce.git
  
 Description: The plugin is for implimenting dual currency with woocommerce 
  
 Version: 1.0
  
-Author: MERAJ JAHIR
- 
-Author URI: https://rachelmccollin.com/
+Author: PROJECT PHOTON
  
 License: MIT
  
 Text Domain: PROJECT PHOTON
  
 */
-// add_filter( 'woocommerce_calculated_total', 'change_calculated_total', 10, 2 );
-// function change_calculated_total( $total, $cart ) {
-//     return $total + 1300;
-// } 
 
 function convert_idr_to_usd_cart( $price ){
     $convertion_rate = 1;
