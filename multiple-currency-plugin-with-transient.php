@@ -69,11 +69,11 @@ function set_cache_currency($price,$currency){
 
 }
 function convert_currency($price,$currency){
-
+ 
         $cached_currency = get_transient('cached_currency'); 
         empty($cached_currency) ? 
-        $cached_currency = return_secondary_currency($cached_currency,$price,$currency) : //9:
-        $cached_currency = set_cache_currency($price,$currency); 
+        $cached_currency = set_cache_currency($price,$currency):
+        $cached_currency = return_secondary_currency($cached_currency,$price,$currency); 
  
         return $cached_currency; 
        
